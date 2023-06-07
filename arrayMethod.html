@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+	<head>
+		<title>ES6 Array method</title>
+        <meta charset ="utf-8">
+		<meta name="description" content=""/>
+		<meta name="keywords" content="HTML,CSS,Java script"/>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    </head>
+    <body>
+        <script>
+            //map Method
+                var a = [12,34,56];
+                mp = (a) => {
+                return a+1;
+                }
+                var res = a.map(mp);
+                console.log(res);
+
+            //filter
+                var b = [12,35,67,24,90,999];
+                fil = (b) => {
+                if(b%2==0){
+                    return b;
+                }
+                }
+                var res = b.filter(fil);
+                console.log(res);
+
+            //find
+                var c = ["stirng",true, 20,23,false,45];
+                fin = (c) => {
+                return typeof c === "number";
+                }
+                var res = c.find(fin);
+                console.log(res);
+
+            //some
+                var d = [12,43,6,78];
+                som = (d) => {
+                return d == 87;
+                }
+                var res = d.some(som);
+                console.log(res);
+
+            //every
+                var e = [1,1,1,1,1,];
+                eve = (e) => {
+                return e == 1;
+                }
+                var res = e.every(eve);
+                console.log(res);
+
+            //forEach
+                var f = [3,5,1,8,"tamil"];
+                var h = f.forEach(function(e){
+                console.log(e+1);
+                });
+
+            //reduce
+                var x = [10,20,30,50];
+                red = (acc,curr) => {
+                return acc+curr;
+                }
+                var res = x.reduce(red,-10);
+                console.log(res);
+        </script>
+    </body>
+</html>
